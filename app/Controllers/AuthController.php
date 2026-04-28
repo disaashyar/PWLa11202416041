@@ -18,7 +18,7 @@ class AuthController extends BaseController
             $password = $this->request->getVar('password');
 
             $dataUser = [
-                'username' => 'april',
+                'username' => 'Disa',
                 'password' => '202cb962ac59075b964b07152d234b70', // 123
                 'role' => 'admin'
             ];
@@ -26,11 +26,14 @@ class AuthController extends BaseController
             if ($username == $dataUser['username']) {
                 if (md5($password) == $dataUser['password']) {
 
-                    session()->set([
-                        'username' => $dataUser['username'],
-                        'role' => $dataUser['role'],
-                        'isLoggedIn' => TRUE
-                    ]);
+                  date_default_timezone_set('Asia/Jakarta'); // biar sesuai dengan waktu
+                  session()->set([
+                  'username'   => $dataUser['username'],
+                  'role'       => $dataUser['role'],
+                  'email'      => '111202416041@mhs.dinus.ac.id',
+                  'login_time' => date('Y-m-d H:i:s'),
+                  'isLoggedIn' => TRUE
+]);
 
                     return redirect()->to('/');
                 } else {

@@ -21,7 +21,7 @@ $password = [
               <div class="d-flex justify-content-center py-4">
                 <a href="index.html" class="logo d-flex align-items-center w-auto">
                   <img src="<?php echo base_url() ?>NiceAdmin/assets/img/logo.png" alt="">
-<span class="d-none d-lg-block">TokoSaya</span>
+<span class="d-none d-lg-block">TokoKU</span>
                 </a>
               </div><!-- End Logo -->
 
