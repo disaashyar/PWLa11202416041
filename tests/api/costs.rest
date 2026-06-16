@@ -1,0 +1,7 @@
+### Hitung Ongkos Kirim Domestic
+POST https://rajaongkir.komerce.id/api/v1/calculate/domestic-cost
+Accept: application/json
+Content-Type: application/x-www-form-urlencoded
+key: QBPqCKVJd7b4cf0365b90b5btybqLBC2
+
+origin=64999&destination=64942&weight=1000&courier=jne
